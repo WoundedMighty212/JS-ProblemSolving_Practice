@@ -78,8 +78,8 @@ const original = {
 const cloned = deepClone(original);
 cloned.nested.hobbies.push("cooking");
 
-//console.log('Orginal', original.nested.hobbies); // should output ["reading", "gaming"]
-//console.log('Clone', cloned.nested.hobbies);  
+console.log('Orginal', original.nested.hobbies); // should output ["reading", "gaming"]
+console.log('Clone', cloned.nested.hobbies);  
 
 //this method is wrong according to the test 
 function mergeSortedArrays(array1, array2){
@@ -120,10 +120,10 @@ function mergeSortedArrays2(array1, array2) {
 }
 
 const sortedArray2 = mergeSortedArrays2([1, 3, 5], [2, 4, 6]);
-//console.log(sortedArray); // should output [1, 2, 3, 4, 5, 6]
+console.log('right way of doing it',sortedArray2); // should output [1, 2, 3, 4, 5, 6]
 
 const sortedArray = mergeSortedArrays([1, 3, 5, 10], [2, 4, 6]); 
-//console.log(sortedArray);
+console.log('wrong way of doing it',sortedArray);
 
 function rotateArray(array = [], RotateValue){
     let count = 0;
